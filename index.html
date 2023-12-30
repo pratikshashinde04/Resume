@@ -14,20 +14,22 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="logo.jpeg" alt="" class="logo" />
-                <ul>
+                <img src="images/logo.jpeg" alt="" class="logo" />
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#porfolio">Portfolio</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
                 <h1>Hi, I'm <span>Pratiksha</span> <br />Shinde From India</h1>
-                <img src="formal.jpg" alt="" id="image" />
+                <img src="images/formal.jpg" alt="" id="image" />
             </div>
         </div>
     </div>
@@ -36,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="user.jpeg" alt="" />
+                    <img src="images/user.jpeg" alt="" />
                 </div>
                 <div class="about-col-1">
                     <h1 class="sub-title">About Me</h1>
@@ -109,7 +111,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="work1.jpg" alt="">
+                    <img src="images/work1.jpg" alt="">
                     <div class="layer">
                         <h3>Criminal Identification System</h3>
                         <p>Robust Criminal Identification System for Recognition of Obscure and Hidden Faces system easily identify the criminals.</p>
@@ -117,7 +119,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="work2.jpg" alt="">
+                    <img src="images/work2.jpg" alt="">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
                         <p>Creating a seamless online shopping app, our project combines intuitive user interfaces with secure transaction capabilities, providing a convenient and enjoyable shopping experience for users worldwide. </p>
@@ -125,7 +127,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="work2.png" alt="">
+                    <img src="images/work2.png" alt="">
                     <div class="layer">
                         <h3>Supply Chain Managemet App</h3>
                         <p>Implementing a robust Supply Chain Management system, our project optimizes end-to-end logistics, enhances real-time visibility, and streamlines operations for improved efficiency and responsiveness in meeting market demands.</p>
@@ -181,23 +183,23 @@
             <h1 class="sub-title">My Publications</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="r1.jpg" alt="">
+                    <img src="images/r1.jpg" alt="">
 
                 </div>
                 <div class="work">
-                    <img src="r2.jpg" alt="">
+                    <img src="images/r2.jpg" alt="">
 
                 </div>
                 <div class="work">
-                    <img src="r3.jpg" alt="">
+                    <img src="images/r3.jpg" alt="">
 
                 </div>
                 <div class="work">
-                    <img src="r4.jpg" alt="">
+                    <img src="images/r4.jpg" alt="">
 
                 </div>
                 <div class="work">
-                    <img src="r5.jpg" alt="">
+                    <img src="images/r5.jpg" alt="">
                 </div>
 
             </div>
@@ -221,7 +223,7 @@
                         <a href="https://www.linkedin.com/in/pratiksha-dattatray-shinde-105256246/"><i class="fa-brands fa-linkedin"></i></a>
 
                     </div>
-                    <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
 
@@ -237,7 +239,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright ⓒ Pratiksha. <i class="fas fa-heart"></i> Made with by Easy Tutorials</p>
+        <p>Copyright ⓒ pratii. <i class="fas fa-heart"></i> Made with by Pratiksha Shinde</p>
     </div>
 
     <script>
@@ -282,6 +284,17 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+    <script>
+        var sidememu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidememu.style.right = '0';
+        }
+
+        function closemenu() {
+            sidememu.style.right = '-200px';
+        }
     </script>
 </body>
 
